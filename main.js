@@ -3,6 +3,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
   .then(data => getdata.innerHTML = data.map((item, i) => {
     return (`
     <tr>
+    <td>${i+1}</td>
     <td>${item.name}</td>
     <td>${item.email}</td>
     <td>${item.website}</td>
